@@ -53,9 +53,9 @@ header {
     text-align: center;
 }
 
+/* Remoção da imagem Boombap.png */
 .img-inicio {
-    max-width: 300px; /* Ajusta o tamanho máximo */
-    height: auto;
+    display: none; /* Remove completamente a imagem */
 }
 
 .esquerda-conteudo {
@@ -116,8 +116,19 @@ h2 {
 }
 
 .fundo-galeria {
-    background: url('Spray.jpg') bottom right no-repeat; /* Substituído */
-    background-size: cover;
+    position: relative; /* Necessário para centralizar */
+}
+
+/* Centralização da imagem Spray.jpg como fundo */
+.fundo-centralizado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza no meio */
+    max-width: 180px; /* Ajusta o tamanho da imagem */
+    height: auto;
+    opacity: 0.7; /* Dá destaque leve sem interferir nas imagens */
+    z-index: -1; /* Coloca a imagem como fundo */
 }
 
 /* Formulário e acessibilidade */
