@@ -117,7 +117,7 @@ h2 {
 
 .fundo-galeria {
     background: url('Spray.jpg') bottom right no-repeat; /* Substituído */
-    background-size: 180px 180px;
+    background-size: cover;
 }
 
 /* Formulário e acessibilidade */
